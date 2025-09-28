@@ -2,25 +2,26 @@ import React from "react";
 
 const page = () => {
   const prices = [
-    { name: "Rákszűrés (stomatoonkológiai szűrés)", price: "Ingyenes" },
-    { name: "Fogkő eltávolítás piezoultrahangos depurátorral", price: "15 000 Ft" },
-    { name: "Fogkő eltávolítás íny alatt, nyitott küret", price: "20 000 Ft / álcsont" },
-    { name: "Periapicalis röntgen", price: "2 000 Ft / db" },
-    { name: "Panoráma röntgen (ortopan tomogram)", price: "5 000 Ft" },
-    { name: "Fogtömés egy felszínen (kompozit)", price: "15 000 Ft" },
-    { name: "Fogtömés több felszínen", price: "20 000 Ft" },
-    { name: "Gyökércsap behelyezés (üvegszálas, fém)", price: "6 000 Ft" },
-    { name: "Egyszerű foghúzás", price: "15 000 Ft" },
-    { name: "Gyökértömés csatornánként", price: "10 000 Ft" },
-    { name: "Gyökércsatorna feltárása és tisztítása csatornánként", price: "5 000 Ft" },
-    { name: "Rendelőben végzett fogfehérítés", price: "50 000 Ft" },
-    { name: "Teljes fém, kerámia és híd tag", price: "45 000 Ft" },
-    { name: "Teljes monolitikus cirkon korona CAD/CAM technikával", price: "50 000 Ft" },
-    { name: "Teljes cirkon kerámia borító korona CAD/CAM technikával", price: "50 000 Ft" },
-    { name: "Teljes prés kerámia borító korona", price: "50 000 Ft" },
-    { name: "Bego Német-Semados implantátum műgyökér", price: "130 000 Ft" },
-    { name: "Implantátum fej műgyökérre", price: "35 000 Ft" },
+    { name: "Szájüregi daganatszűrés és állapotfelmérés", price: "Ingyenes" },
+    { name: "Fogkő eltávolítás ultrahangos készülékkel", price: "14 000 Ft" },
+    { name: "Íny alatti tisztítás és zárt küret", price: "19 000 Ft" },
+    { name: "Kisméretű röntgenfelvétel (periapikális)", price: "2 500 Ft" },
+    { name: "Panoráma röntgenfelvétel", price: "6 000 Ft" },
+    { name: "Esztétikus fogtömés egy felszínen", price: "16 000 Ft" },
+    { name: "Esztétikus fogtömés több felszínen", price: "21 000 Ft" },
+    { name: "Gyökércsap behelyezés (üvegszálas)", price: "7 000 Ft" },
+    { name: "Egyszerű fogeltávolítás", price: "16 000 Ft" },
+    { name: "Gyökérkezelés csatornánként", price: "11 000 Ft" },
+    { name: "Gyökércsatorna feltárás és fertőtlenítés csatornánként", price: "6 000 Ft" },
+    { name: "Professzionális rendelői fogfehérítés", price: "48 000 Ft" },
+    { name: "Fémkerámia korona vagy hídtag", price: "46 000 Ft" },
+    { name: "Cirkon korona CAD/CAM technológiával", price: "52 000 Ft" },
+    { name: "Teljes cirkónium kerámia borító korona", price: "53 000 Ft" },
+    { name: "Préskerámia borító korona", price: "52 000 Ft" },
+    { name: "Prémium implantátum beültetés", price: "135 000 Ft" },
+    { name: "Felépítmény implantátumra", price: "38 000 Ft" },
   ];
+
 
   return (
     <section className=" relative font-sans bg-gradient-to-b from-sky-50 to-white text-gray-800">
@@ -51,16 +52,16 @@ const page = () => {
           <h2 className="text-3xl font-bold text-blue-600 mb-10 text-center">Szolgáltatásaink díjai</h2>
 
           <div className="space-y-4">
-          {prices.map((item) => (
-            <div
-              key={item.name}
-              className="flex flex-col lg:flex-row justify-between items-start lg:items-center text-lg border-b border-dotted border-gray-300 pb-2"
-            >
-              <span className="text-gray-800">{item.name}</span>
-              <span className="text-blue-600 font-semibold">{item.price}</span>
-            </div>
-          ))}
-        </div>
+            {prices.map((item) => (
+              <div
+                key={item.name}
+                className="flex flex-col lg:flex-row justify-between items-start lg:items-center text-lg border-b border-dotted border-gray-300 pb-2"
+              >
+                <span className="text-gray-800">{item.name}</span>
+                <span className="text-blue-600 font-semibold">{item.price}</span>
+              </div>
+            ))}
+          </div>
           <p className="mt-12 text-center text-gray-500 text-sm max-w-2xl mx-auto">
             * Az árak tájékoztató jellegűek, egyes kezelések ára az egyéni igényektől és a kezelés összetettségétől függően eltérhet.
             A pontos díjról személyes konzultáció során adunk részletes tájékoztatást.
