@@ -1,26 +1,45 @@
 import React from "react";
 
 const page = () => {
-  const prices = [
-    { name: "Szájüregi daganatszűrés és állapotfelmérés", price: "Ingyenes" },
-    { name: "Fogkő eltávolítás ultrahangos készülékkel", price: "14 000 Ft" },
-    { name: "Íny alatti tisztítás és zárt küret", price: "19 000 Ft" },
-    { name: "Kisméretű röntgenfelvétel (periapikális)", price: "2 500 Ft" },
-    { name: "Panoráma röntgenfelvétel", price: "6 000 Ft" },
-    { name: "Esztétikus fogtömés egy felszínen", price: "16 000 Ft" },
-    { name: "Esztétikus fogtömés több felszínen", price: "21 000 Ft" },
-    { name: "Gyökércsap behelyezés (üvegszálas)", price: "7 000 Ft" },
-    { name: "Egyszerű fogeltávolítás", price: "16 000 Ft" },
-    { name: "Gyökérkezelés csatornánként", price: "11 000 Ft" },
-    { name: "Gyökércsatorna feltárás és fertőtlenítés csatornánként", price: "6 000 Ft" },
-    { name: "Professzionális rendelői fogfehérítés", price: "48 000 Ft" },
-    { name: "Fémkerámia korona vagy hídtag", price: "46 000 Ft" },
-    { name: "Cirkon korona CAD/CAM technológiával", price: "52 000 Ft" },
-    { name: "Teljes cirkónium kerámia borító korona", price: "53 000 Ft" },
-    { name: "Préskerámia borító korona", price: "52 000 Ft" },
-    { name: "Prémium implantátum beültetés", price: "135 000 Ft" },
-    { name: "Felépítmény implantátumra", price: "38 000 Ft" },
+  const priceCategories = [
+    {
+      title: "Diagnosztika",
+      items: [
+        { name: "Szájüregi daganatszűrés és állapotfelmérés", price: "Ingyenes" },
+        { name: "Kisméretű röntgenfelvétel (periapikális)", price: "2 500 Ft" },
+        { name: "Panoráma röntgenfelvétel", price: "6 000 Ft" },
+      ],
+    },
+    {
+      title: "Konzerváló kezelések",
+      items: [
+        { name: "Esztétikus fogtömés egy felszínen", price: "16 000 Ft" },
+        { name: "Esztétikus fogtömés több felszínen", price: "21 000 Ft" },
+        { name: "Gyökérkezelés csatornánként", price: "11 000 Ft" },
+        { name: "Gyökércsatorna feltárás és fertőtlenítés csatornánként", price: "6 000 Ft" },
+        { name: "Gyökércsap behelyezés (üvegszálas)", price: "7 000 Ft" },
+        { name: "Egyszerű fogeltávolítás", price: "16 000 Ft" },
+      ],
+    },
+    {
+      title: "Esztétikai kezelések",
+      items: [
+        { name: "Professzionális rendelői fogfehérítés", price: "48 000 Ft" },
+        { name: "Préskerámia borító korona", price: "52 000 Ft" },
+      ],
+    },
+    {
+      title: "Protetikai és implantológiai kezelések",
+      items: [
+        { name: "Fémkerámia korona vagy hídtag", price: "46 000 Ft" },
+        { name: "Cirkon korona CAD/CAM technológiával", price: "52 000 Ft" },
+        { name: "Teljes cirkónium kerámia borító korona", price: "53 000 Ft" },
+        { name: "Prémium implantátum beültetés", price: "135 000 Ft" },
+        { name: "Felépítmény implantátumra", price: "38 000 Ft" },
+      ],
+    },
   ];
+
 
 
   return (
@@ -51,17 +70,25 @@ const page = () => {
         <div className="relative max-w-4xl mx-auto px-6 py-20">
           <h2 className="text-3xl font-bold text-blue-600 mb-10 text-center">Szolgáltatásaink díjai</h2>
 
-          <div className="space-y-4">
-            {prices.map((item) => (
-              <div
-                key={item.name}
-                className="flex flex-col lg:flex-row justify-between items-start lg:items-center text-lg border-b border-dotted border-gray-300 pb-2"
-              >
-                <span className="text-gray-800">{item.name}</span>
-                <span className="text-blue-600 font-semibold">{item.price}</span>
+          {priceCategories.map((category) => (
+            <div key={category.title} className="mb-12">
+              <h3 className="text-2xl font-semibold text-blue-700 mb-4 border-b border-blue-200 pb-2">
+                {category.title}
+              </h3>
+
+              <div className="space-y-3">
+                {category.items.map((item) => (
+                  <div
+                    key={item.name}
+                    className="flex flex-col lg:flex-row justify-between items-start lg:items-center text-lg border-b border-dotted border-gray-300 pb-2"
+                  >
+                    <span className="text-gray-800">{item.name}</span>
+                    <span className="text-blue-600 font-semibold">{item.price}</span>
+                  </div>
+                ))}
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
           <p className="mt-12 text-center text-gray-500 text-sm max-w-2xl mx-auto">
             * Az árak tájékoztató jellegűek, egyes kezelések ára az egyéni igényektől és a kezelés összetettségétől függően eltérhet.
             A pontos díjról személyes konzultáció során adunk részletes tájékoztatást.
