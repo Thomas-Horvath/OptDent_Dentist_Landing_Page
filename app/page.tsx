@@ -30,11 +30,11 @@ export default function Home() {
           </p>
 
           <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/kapcsolat" className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-8 shadow-lg transition cursor-pointer">
+            <Link href="/kapcsolat" className="rounded-lg bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-8 shadow-lg transition cursor-pointer">
               Időpontfoglalás
             </Link>
 
-            <Link href="/szolgaltatasaink" className="bg-white hover:bg-blue-50 text-blue-600 font-semibold py-3 px-8 shadow-lg  transition cursor-pointer">
+            <Link href="/szolgaltatasaink" className="rounded-lg bg-white hover:bg-blue-50 text-blue-600 font-semibold py-3 px-8 shadow-lg  transition cursor-pointer">
               Szolgáltatásaink
             </Link>
           </div>
