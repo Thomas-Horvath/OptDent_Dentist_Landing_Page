@@ -3,20 +3,52 @@
 @theme {
   --color-main-blue: #DEEDFA;
   --color-bg: #fefefe;
+  --color-blue:#2b7fff; /* blue-500 */
 }
-html, body, :root { height: 100%; background: var(--color-bg); }
 
+html,
+body,
+:root {
+  height: 100%;
+  background: var(--color-bg);
+}
+
+body {
+  min-width: 300px;
+}
+
+section {
+  min-height: 100vh;
+}
 .home-banner {
   background-image: url('/banner.jpg');
 }
 
 
+
+
+
 .poly {
   height: 35px;
   width: 56.5%;
-  background: var(--color-bg) 0% 0% no-repeat padding-box;
+
+  background-position: 0% 0%;
+background-repeat: no-repeat;
+background-origin: padding-box;
   clip-path: polygon(0% 0%, 92% 0%, 100% 100%, 0% 100%);
   position: absolute;
   bottom: 0;
   left: 0;
 }
+.poly-reverse {
+  height: 35px;
+  width: 60%;
+  background-position: 0% 0%;
+background-repeat: no-repeat;
+background-origin: padding-box;
+  clip-path: polygon(8% 0%, 100% 0%, 100% 100%, 0% 100%);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
