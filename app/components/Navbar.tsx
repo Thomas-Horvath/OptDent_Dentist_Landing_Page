@@ -9,8 +9,8 @@ import { IoCloseSharp } from "react-icons/io5";
 const linkData = [
     { href: "/", label: "Kezdőlap" },
     { href: "/rolunk", label: "Rólunk" },
-    { href: "/szolgaltatasaink", label: "Szolgáltatások" },
-    { href: "/arak", label: "Árak" },
+    { href: "/szolgaltatasaink", label: "Szolgáltatásaink" },
+    { href: "/arak", label: "Áraink" },
     { href: "/kapcsolat", label: "Kapcsolat" },
 ];
 

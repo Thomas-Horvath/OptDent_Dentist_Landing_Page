@@ -5,6 +5,11 @@ import Link from "next/link";
 export default function Home() {
   return (
     <section className="pt-16 lg:pt-18 font-sans bg-gradient-to-b from-sky-50 to-white text-gray-800">
+
+
+
+
+
       {/* Hero */}
       <div className="relative w-full pb-20 lg:pb-0 lg:h-[70vh] flex items-center justify-center overflow-hidden">
         {/* Háttérkép */}
@@ -35,9 +40,11 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Hullám */}
+        {/* Polygone*/}
         <div className="poly bg-bg"></div>
       </div>
+
+
 
 
 
@@ -51,7 +58,7 @@ export default function Home() {
 
         <div className="mt-16 max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 px-6">
 
-          {/* 1️⃣ */}
+          {/* 1️ */}
           <div className="p-8 bg-sky-50 rounded-xl shadow-sm hover:shadow-md transition">
             <div className="text-blue-500 text-5xl mb-4">🦷</div>
             <h3 className="text-xl font-semibold text-gray-800">Modern technológia</h3>
@@ -60,7 +67,7 @@ export default function Home() {
             </p>
           </div>
 
-          {/* 2️⃣ */}
+          {/* 2️ */}
           <div className="p-8 bg-sky-50 rounded-xl shadow-sm hover:shadow-md transition">
             <div className="text-blue-500 text-5xl mb-4">👩‍⚕️</div>
             <h3 className="text-xl font-semibold text-gray-800">Szakértő csapat</h3>
@@ -69,7 +76,7 @@ export default function Home() {
             </p>
           </div>
 
-          {/* 3️⃣ */}
+          {/* 3️ */}
           <div className="p-8 bg-sky-50 rounded-xl shadow-sm hover:shadow-md transition">
             <div className="text-blue-500 text-5xl mb-4">🤝</div>
             <h3 className="text-xl font-semibold text-gray-800">Empatikus hozzáállás</h3>
@@ -78,7 +85,7 @@ export default function Home() {
             </p>
           </div>
 
-          {/* 4️⃣ */}
+          {/* 4️ */}
           <div className="p-8 bg-sky-50 rounded-xl shadow-sm hover:shadow-md transition">
             <div className="text-blue-500 text-5xl mb-4">⭐</div>
             <h3 className="text-xl font-semibold text-gray-800">Kiváló eredmények</h3>
@@ -95,8 +102,7 @@ export default function Home() {
 
 
       {/* Csapat szekció */}
-
-      <section className="py-24 relative bg-sky-50 text-center">
+      <aside className="py-24 relative bg-sky-50 text-center">
         <h2 className="text-3xl font-bold text-blue-600 mb-12">Ismerje meg csapatunkat</h2>
 
         <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-12 px-6">
@@ -126,6 +132,9 @@ export default function Home() {
             </div>
           </Link>
 
+
+
+
           {/* ASSZISZTENS KÁRTYA */}
           <div className="bg-white rounded-2xl shadow-md hover:shadow-xl transition transform hover:-translate-y-1">
             <div className="overflow-hidden rounded-t-2xl">
@@ -147,7 +156,7 @@ export default function Home() {
 
         </div>
         <div className="poly-reverse bg-blue-500"></div>
-      </section>
+      </aside>
 
     </section>
   );
