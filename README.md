@@ -1,36 +1,89 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## [➡️ Olvasd el magyarul <img src="https://flagcdn.com/w20/hu.png" width="20"/> ](./README.hu.md)
+<br>
 
-## Getting Started
+# 🌐 [View the project here](opti-dent.vercel.app) 
+<br>
+<br>
 
-First, run the development server:
+
+# 🦷 Optident – Dental Clinic Website
+
+This project is a **Next.js + Tailwind CSS** responsive website built for a modern dental clinic.  
+The goal is to create a professional, trustworthy, and well-structured website that presents services, prices, the medical team, and contact options.
+
+---
+
+## 📸 Features
+
+- ✅ **Landing page** – hero section, banners, call-to-action buttons  
+- ✅ **About page** – introduction, background, clinic information  
+- ✅ **Services page** – detailed descriptions by category  
+- ✅ **Prices page** – transparent and easy-to-read price list  
+- ✅ **Gallery page** – image gallery with modal view  
+- ✅ **Contact page** – contact details and Google Maps integration  
+- ✅ **Imprint & Privacy Policy** – legal pages  
+- ✅ **Responsive design** – works on mobile, tablet, and desktop  
+- ✅ **Icons and UI elements** – built with `react-icons`
+
+---
+
+## 🛠️ Technologies
+
+| Technology | Description |
+|------------|-------------|
+| [Next.js](https://nextjs.org/) | React-based full-stack framework |
+| [React](https://react.dev/) | Frontend UI components |
+| [Tailwind CSS](https://tailwindcss.com/) | Utility-first CSS framework for styling |
+| [React Icons](https://react-icons.github.io/react-icons/) | Icons and visual UI elements |
+
+---
+
+## ⚙️ Installation and Usage
+
+### 1️⃣ Clone the project
+
+```bash
+git clone https://github.com/username/optident-landing.git
+cd optident-landing
+```
+
+### 2️⃣ Install dependencies
+
+```bash
+npm install
+```
+
+### 3️⃣ Start the development server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### ➡️ The project will be available at:
+- 👉 http://localhost:3000
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📁 Project Structure
 
-## Learn More
+``` bash
+optident/
+│
+├─ app/                        # Next.js pages and routes
+│  ├─ page.tsx                 # Homepage
+│  ├─ rolunk/                  # About page
+│  ├─ szolgaltatasaink/        # Services page
+│  ├─ arak/                    # Prices page
+│  ├─ kapcsolat/              # Contact page
+│  ├─ galeria/                # Gallery page
+│  ├─ impresszum/            # Imprint page
+│  └─ adatvedelmi-nyilatkozat/ # Privacy Policy page
+│
+├─ public/                     # Static files (images, icons, favicon)
+├─ components/                 # Shared UI components (Navbar, Footer, etc.)
+├─ styles/                     # Tailwind CSS configuration
+└─ next.config.js              # Next.js configuration
+```
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## ✨ Author
+- Thomas Horváth
+- 🌐 Website: https://thomashorvath.hu
