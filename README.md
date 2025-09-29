@@ -1,4 +1,4 @@
-## [➡️ Olvasd el magyarul <img src="https://flagcdn.com/w20/hu.png" width="20"/> ](./README.hu.md)
+# [➡️ Olvasd el magyarul <img src="https://flagcdn.com/w20/hu.png" width="40"/> ](./README.hu.md)
 <br>
 
 # 🌐 [View the project here](opti-dent.vercel.app) 

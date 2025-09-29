@@ -1,4 +1,4 @@
-# [➡️ Read this in English <img src="https://flagcdn.com/w20/gb.png" width="20"/>](./README.md)
+# [➡️ Read this in English <img src="https://flagcdn.com/w20/gb.png" width="40"/>](./README.md)
 <br>
 
 # 🌐 [Nézd meg a projektet itt](opti-dent.vercel.app) 
