@@ -10,6 +10,7 @@ const linkData = [
     { href: "/", label: "Kezdőlap" },
     { href: "/rolunk", label: "Rólunk" },
     { href: "/szolgaltatasaink", label: "Szolgáltatásaink" },
+    { href: "/galeria", label: "Galéria" },
     { href: "/arak", label: "Áraink" },
     { href: "/kapcsolat", label: "Kapcsolat" },
 ];

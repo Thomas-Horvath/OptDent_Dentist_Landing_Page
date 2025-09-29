@@ -1,5 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
+import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
+
 
 const Footer = () => {
   return (
@@ -33,9 +35,16 @@ const Footer = () => {
         <div>
           <h3 className="text-lg font-semibold mb-4 text-white">Elérhetőségek</h3>
           <ul className="space-y-2 text-sm text-blue-100">
-            <li>📍 2013 Pomáz, Kossuth Lajos utca 12.</li>
-            <li>📞 +36 30 123 4567</li>
-            <li>✉️ info@optident.hu</li>
+            <li className="flex items-center gap-2">
+              <FaMapMarkerAlt className="text-white text-lg" />
+              2013 Pomáz, Kossuth Lajos utca 12.
+            </li>
+            <li className="flex items-center gap-2">
+              <FaPhoneAlt className="text-white text-lg" />
+              +36 30 123 4567</li>
+            <li className="flex items-center gap-2">
+              <FaEnvelope className="text-white text-lg" />
+              info@optident.hu</li>
           </ul>
         </div>
 

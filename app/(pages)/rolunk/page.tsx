@@ -1,18 +1,24 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const page = () => {
   return (
     <section className="font-sans bg-gradient-to-b from-sky-50 to-white text-gray-800">
       {/* Banner */}
-      <div className="relative w-full h-[38vh] md:h-[45vh] flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 bg-cover bg-center opacity-25"
-          style={{ backgroundImage: "url('/about-banner.jpg')" }} />
+      <div className="relative w-full h-[50vh] md:h-[45vh] flex items-center justify-center overflow-hidden">
+        <Image
+          src={"/about-banner.jpg"}
+          className="absolute inset-0 object-cover object-center  opacity-50 "
+          fill
+          priority
+          alt="Fogászati eszközök, fúró, elszívó stb."
+        />
         <div className="absolute inset-0 bg-gradient-to-r from-blue-900/70 via-blue-900/50 to-transparent" />
         <div className="relative z-10 max-w-5xl w-full px-6 text-center md:text-left">
           <p className="text-blue-100 uppercase tracking-wider text-sm">Rendelőnk</p>
-          <h1 className="text-4xl md:text-5xl font-extrabold text-white leading-tight">
-            Rólunk – <span className="text-blue-300">Optident</span>
+          <h1 className="text-2xl sm:text-3xl md:text-5xl font-extrabold text-white leading-tight">
+            Rólunk – <span className="text-blue-200">Optident</span>
           </h1>
           <p className="mt-3 text-blue-50 max-w-2xl">
             Modern technológia, empatikus gondoskodás és letisztult környezet – Pomáz szívében.
@@ -28,11 +34,14 @@ const page = () => {
             {/* Kép */}
             <div className="md:col-span-2">
               <div className="overflow-hidden rounded-2xl shadow-md bg-white">
-                <img
+                <Image
                   src="/about.jpg"
                   alt="Dr. Opt Tamás"
                   className="w-full h-[420px] object-cover"
+                  width={450}
+                  height={500}
                 />
+
               </div>
 
             </div>
@@ -132,7 +141,7 @@ const page = () => {
             </div>
           </div>
         </div>
-        <div className="poly bg-blue-500" />
+        <div className="poly-reverse bg-blue-500" />
       </div>
 
     </section>

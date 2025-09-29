@@ -1,3 +1,5 @@
+import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const page = () => {
@@ -45,13 +47,18 @@ const page = () => {
   return (
     <section className=" relative font-sans bg-gradient-to-b from-sky-50 to-white text-gray-800">
       {/* Banner */}
-      <div className="relative w-full h-[38vh] md:h-[45vh] flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 bg-cover bg-center opacity-25"
-          style={{ backgroundImage: "url('/prices-banner.jpg')" }} />
+      <div className="relative w-full h-[50vh] md:h-[45vh] flex items-center justify-center overflow-hidden">
+        <Image
+          src={"/prices-banner.jpg"}
+          className="absolute inset-0 object-cover object-center  opacity-50 "
+          fill
+          priority
+          alt="Fogászati kezelés, fogorvos és a paciens."
+        />
         <div className="absolute inset-0 bg-gradient-to-r from-blue-900/70 via-blue-900/50 to-transparent" />
         <div className="relative z-10 max-w-5xl w-full px-6 text-center md:text-left">
-          <h1 className="text-4xl md:text-5xl font-extrabold text-white leading-tight">
-            Árlista – <span className="text-blue-300">Optident</span>
+          <h1 className="text-2xl sm:text-3xl md:text-5xl font-extrabold text-white leading-tight">
+            Árlista – <span className="text-blue-200">Optident</span>
           </h1>
           <p className="mt-3 text-blue-50 max-w-2xl">
             Áraink minden esetben tájékoztató jellegűek – a pontos összeget személyes konzultáció során határozzuk meg.
@@ -103,12 +110,12 @@ const page = () => {
         <p className="mt-3 text-gray-600">
           Kérjen időpontot egy ingyenes konzultációra, és segítünk megtalálni az Ön számára legjobb megoldást.
         </p>
-        <a
+        <Link
           href="/kapcsolat"
           className="inline-block mt-6 bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-8 rounded-lg shadow-md transition"
         >
           Időpontfoglalás
-        </a>
+        </Link>
       </div>
       <div className="poly bg-blue-500" />
     </section>

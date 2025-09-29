@@ -1,4 +1,7 @@
+import Image from "next/image";
 import Link from "next/link";
+import { FaTooth, FaUserMd, FaHandsHelping, FaStar } from "react-icons/fa";
+
 
 
 
@@ -13,19 +16,25 @@ export default function Home() {
       {/* Hero */}
       <div className="relative w-full pb-20 lg:pb-0 lg:h-[70vh] flex items-center justify-center overflow-hidden">
         {/* Háttérkép */}
-        <div className="absolute inset-0 bg-cover bg-center opacity-50 home-banner"></div>
+        <Image
+          src={"/banner.jpg"}
+          className="absolute inset-0 object-cover object-center  opacity-50 "
+          fill
+          priority
+          alt="Fogorvosi rendelő és orvosi szék."
+        />
         {/* Overlay */}
         <div className="absolute inset-0 bg-blue-900/60"></div>
         {/* <div className="absolute inset-0 bg-gradient-to-r from-blue-900/80 via-blue-900/60 to-transparent"></div> */}
 
 
         {/* Tartalom */}
-        <div className="relative z-10 max-w-4xl text-center px-6 pt-6 pb-14">
-          <h1 className="text-5xl md:text-6xl font-extrabold text-white leading-tight drop-shadow-md">
-            Üdvözöljük az <span className=" text-blue-500 text-7xl font-black  [text-shadow:_1px_1px_0_white,_-1px_1px_0_white,_1px_-1px_0_white,_-1px_-1px_0_white]">Optident</span> fogászat honlapján!
+        <div className="relative z-10 max-w-4xl text-center px-6 pt-10 pb-14">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white leading-tight drop-shadow-md">
+            Üdvözöljük az <span className=" text-blue-500 text-5xl md:text-7xl font-black  [text-shadow:_1px_1px_0_white,_-1px_1px_0_white,_1px_-1px_0_white,_-1px_-1px_0_white]">Optident</span> fogászat honlapján!
           </h1>
 
-          <p className="mt-6 text-xl text-blue-50 max-w-2xl mx-auto">
+          <p className="mt-6 text-lg md:text-xl text-blue-50 max-w-2xl mx-auto">
             Professzionális fogászati ellátás Pomáz szívében – modern technológia, barátságos környezet és ragyogó mosoly minden páciensnek.
           </p>
 
@@ -60,7 +69,7 @@ export default function Home() {
 
           {/* 1️ */}
           <div className="p-8 bg-sky-50 rounded-xl shadow-sm hover:shadow-md transition">
-            <div className="text-blue-500 text-5xl mb-4">🦷</div>
+            <div className="text-blue-500 text-5xl mb-4 flex justify-center"><FaTooth /></div>
             <h3 className="text-xl font-semibold text-gray-800">Modern technológia</h3>
             <p className="mt-2 text-gray-600 text-sm">
               Legkorszerűbb eszközökkel és innovatív eljárásokkal dolgozunk a tökéletes eredményért.
@@ -69,7 +78,7 @@ export default function Home() {
 
           {/* 2️ */}
           <div className="p-8 bg-sky-50 rounded-xl shadow-sm hover:shadow-md transition">
-            <div className="text-blue-500 text-5xl mb-4">👩‍⚕️</div>
+            <div className="text-blue-500 text-5xl mb-4 flex justify-center"><FaUserMd /></div>
             <h3 className="text-xl font-semibold text-gray-800">Szakértő csapat</h3>
             <p className="mt-2 text-gray-600 text-sm">
               Tapasztalt fogorvosaink és asszisztenseink elhivatottan dolgoznak az Ön mosolyáért.
@@ -78,7 +87,7 @@ export default function Home() {
 
           {/* 3️ */}
           <div className="p-8 bg-sky-50 rounded-xl shadow-sm hover:shadow-md transition">
-            <div className="text-blue-500 text-5xl mb-4">🤝</div>
+            <div className="text-blue-500 text-5xl mb-4 flex justify-center"><FaHandsHelping /></div>
             <h3 className="text-xl font-semibold text-gray-800">Empatikus hozzáállás</h3>
             <p className="mt-2 text-gray-600 text-sm">
               Barátságos, biztonságos környezetet biztosítunk minden páciensünk számára.
@@ -87,7 +96,7 @@ export default function Home() {
 
           {/* 4️ */}
           <div className="p-8 bg-sky-50 rounded-xl shadow-sm hover:shadow-md transition">
-            <div className="text-blue-500 text-5xl mb-4">⭐</div>
+            <div className="text-blue-500 text-5xl mb-4 flex justify-center"><FaStar /></div>
             <h3 className="text-xl font-semibold text-gray-800">Kiváló eredmények</h3>
             <p className="mt-2 text-gray-600 text-sm">
               Több száz elégedett páciens és gyönyörű mosoly bizonyítja munkánk minőségét.
@@ -113,10 +122,12 @@ export default function Home() {
             className="group bg-white rounded-2xl shadow-md hover:shadow-xl transition transform hover:-translate-y-1"
           >
             <div className="overflow-hidden rounded-t-2xl">
-              <img
+              <Image
                 src="/dr-opt.jpg"
                 alt="Dr. Opt Tamás"
                 className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-500"
+                width={500}
+                height={350}
               />
             </div>
             <div className="p-6">
@@ -138,10 +149,12 @@ export default function Home() {
           {/* ASSZISZTENS KÁRTYA */}
           <div className="bg-white rounded-2xl shadow-md hover:shadow-xl transition transform hover:-translate-y-1">
             <div className="overflow-hidden rounded-t-2xl">
-              <img
+              <Image
                 src="/assistant.jpg"
                 alt="Kiss Anna"
                 className="w-full h-80 object-cover hover:scale-105 transition-transform duration-500"
+                width={500}
+                height={350}
               />
             </div>
             <div className="p-6">
