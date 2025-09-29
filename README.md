@@ -24,6 +24,7 @@ The goal is to create a professional, trustworthy, and well-structured website t
 - ✅ **Imprint & Privacy Policy** – legal pages  
 - ✅ **Responsive design** – works on mobile, tablet, and desktop  
 - ✅ **Icons and UI elements** – built with `react-icons`
+- ✅ **Images** – [www.freepik.com](https://www.freepik.com/) 
 
 ---
 

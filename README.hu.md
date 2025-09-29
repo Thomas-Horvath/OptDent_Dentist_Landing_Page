@@ -24,6 +24,7 @@ A cél egy professzionális, bizalmat sugalló és jól strukturált honlap lét
 - ✅ **Impresszum és Adatvédelmi nyilatkozat** – jogi oldalak  
 - ✅ **Reszponzív design** – mobil, tablet és desktop támogatás  
 - ✅ **Ikonok és UI elemek** – `react-icons` segítségével  
+- ✅ **Képek** – [www.freepik.com](https://www.freepik.com/) 
 
 ---
 
