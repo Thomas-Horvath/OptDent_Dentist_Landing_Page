@@ -8,7 +8,7 @@ const page = () => {
       {/* Banner */}
       <div className="relative w-full h-[55vh] md:h-[45vh] flex items-center justify-center overflow-hidden">
         <Image
-          src="/services-banner.jpg"
+          src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/services-banner.jpg`}
           fill
           priority
           alt="Fogászati eszközök, kezelőszék, rendelő"

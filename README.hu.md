@@ -45,7 +45,7 @@ A cél egy professzionális, bizalmat sugalló és jól strukturált honlap lét
 ### 1️⃣ Klónozás
 
 ```bash
-git clone https://github.com/felhasznalo/optident-landing.git
+git clone https://github.com/Thomas-Horvath/OptiDent_Dentist_Landing_Page.git
 cd optident-landing
 ```
 

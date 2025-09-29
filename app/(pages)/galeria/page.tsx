@@ -20,7 +20,8 @@ const GalleryPage = () => {
             {/* Banner */}
             <div className="relative w-full h-[50vh] md:h-[45vh] flex items-center justify-center overflow-hidden">
                 <Image
-                    src="/gallery-banner.jpg"
+                   
+                    src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/gallery-banner.jpg`}
                     fill
                     priority
                     alt="Galéria - rendelő és kezelések"
@@ -51,7 +52,8 @@ const GalleryPage = () => {
                             onClick={() => setSelectedImage(img)}
                         >
                             <Image
-                                src={img}
+
+                                src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}${img}`}
                                 alt={`Galéria kép ${idx + 1}`}
                                 width={600}
                                 height={400}
@@ -77,7 +79,8 @@ const GalleryPage = () => {
                             ✕
                         </button>
                         <Image
-                            src={selectedImage}
+
+                            src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}${selectedImage}`}
                             alt="Kép nagyban"
                             width={1200}
                             height={800}

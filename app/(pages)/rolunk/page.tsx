@@ -8,7 +8,7 @@ const page = () => {
       {/* Banner */}
       <div className="relative w-full h-[50vh] md:h-[45vh] flex items-center justify-center overflow-hidden">
         <Image
-          src={"/about-banner.jpg"}
+          src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/about-banner.jpg`}
           className="absolute inset-0 object-cover object-center  opacity-50 "
           fill
           priority
@@ -35,7 +35,7 @@ const page = () => {
             <div className="md:col-span-2">
               <div className="overflow-hidden rounded-2xl shadow-md bg-white">
                 <Image
-                  src="/about.jpg"
+                  src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/about.jpg`}
                   alt="Dr. Opt Tamás"
                   className="w-full h-[420px] object-cover"
                   width={450}

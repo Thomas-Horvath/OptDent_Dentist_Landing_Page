@@ -7,7 +7,7 @@ export default function ImpresszumPage() {
       {/* Banner */}
       <div className="relative w-full h-[38vh] md:h-[45vh] flex items-center justify-center overflow-hidden">
         <Image
-          src="/law.jpg"
+          src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/law.jpg`}
           fill
           priority
           alt="Impresszum - jogi információk"

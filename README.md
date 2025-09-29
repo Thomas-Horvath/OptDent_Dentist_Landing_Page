@@ -44,7 +44,7 @@ The goal is to create a professional, trustworthy, and well-structured website t
 ### 1️⃣ Clone the project
 
 ```bash
-git clone https://github.com/username/optident-landing.git
+git clone https://github.com/Thomas-Horvath/OptiDent_Dentist_Landing_Page.git
 cd optident-landing
 ```
 

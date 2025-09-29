@@ -34,7 +34,12 @@ const Navbar = () => {
 
 
                 <Link href="/" className="h-full flex items-center gap-1 pl-4" onClick={() => setIsOpen(false)}>
-                    <Image src="/logo.svg" alt="logo" width={50} height={50} className="mr-2 h-8 w-8 lg:h-12 lg:w-12" />
+                    <Image
+                        src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/logo.svg`}
+                        alt="logo"
+                        width={50}
+                        height={50}
+                        className="mr-2 h-8 w-8 lg:h-12 lg:w-12" />
                     <h1 className="text-3xl lg:text-4xl font-bold text-blue-500 mb-1 lg:mb-2">Optident</h1>
                 </Link>
 
