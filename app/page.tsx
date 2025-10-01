@@ -7,7 +7,7 @@ import { FaTooth, FaUserMd, FaHandsHelping, FaStar } from "react-icons/fa";
 
 export default function Home() {
   return (
-    <section className="pt-16 lg:pt-18 font-sans bg-gradient-to-b from-sky-50 to-white text-gray-800">
+    <section className="pt-16 lg:pt-18 font-sans bg-bg text-gray-800">
 
 
 
@@ -59,7 +59,7 @@ export default function Home() {
 
 
       {/* Miért válasszon minket */}
-      <div className="relative pt-24 pb-52 bg-white text-center">
+      <div className="relative pt-24 pb-52 bg-bg text-center">
         <h2 className="text-3xl font-bold text-blue-600">Miért válasszon minket?</h2>
         <p className="mt-4 max-w-3xl mx-auto text-lg text-gray-700">
           Tapasztalt szakorvosaink, modern berendezéseink és empatikus hozzáállásunk gondoskodik róla, hogy mosolya mindig a legjobb formáját mutassa.
@@ -111,7 +111,7 @@ export default function Home() {
 
 
       {/* Csapat szekció */}
-      <aside className="py-24 relative bg-sky-50 text-center">
+      <aside className="pt-24 pb-36 relative bg-sky-50 text-center">
         <h2 className="text-3xl font-bold text-blue-600 mb-12">Ismerje meg csapatunkat</h2>
 
         <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-12 px-6">

@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const page = () => {
   return (
-    <section className="font-sans bg-gradient-to-b from-sky-50 to-white text-gray-800">
+    <section className="font-sans bg-sky-50">
       {/* Banner */}
       <div className="relative w-full h-[50vh] md:h-[45vh] flex items-center justify-center overflow-hidden">
         <Image
@@ -29,7 +29,7 @@ const page = () => {
 
       {/* Doktor bemutatkozás */}
       <div className="relative">
-        <div className=" max-w-6xl mx-auto px-6 py-16">
+        <div className=" max-w-6xl mx-auto px-6 pt-16 pb-24">
           <div className="grid grid-cols-1 md:grid-cols-5 gap-10">
             {/* Kép */}
             <div className="md:col-span-2">

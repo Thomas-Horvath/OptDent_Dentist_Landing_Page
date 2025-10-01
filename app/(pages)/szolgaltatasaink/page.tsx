@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const page = () => {
   return (
-    <section className="font-sans bg-gradient-to-b from-sky-50 to-white text-gray-800">
+    <section className="font-sans bg-bg">
       {/* Banner */}
       <div className="relative w-full h-[55vh] md:h-[45vh] flex items-center justify-center overflow-hidden">
         <Image
@@ -24,7 +24,7 @@ const page = () => {
             Modern technológia, empatikus hozzáállás és személyre szabott megoldások minden páciensünk számára.
           </p>
         </div>
-        <div className="poly bg-sky-50" />
+        <div className="poly bg-bg" />
       </div>
 
       {/* Szolgáltatások */}

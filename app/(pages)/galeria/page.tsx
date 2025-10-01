@@ -16,7 +16,7 @@ const GalleryPage = () => {
     const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
     return (
-        <section className="relative font-sans bg-gradient-to-b from-sky-50 to-white text-gray-800">
+        <section className="relative font-sans bg-sky-50 text-gray-800">
             {/* Banner */}
             <div className="relative w-full h-[50vh] md:h-[45vh] flex items-center justify-center overflow-hidden">
                 <Image
@@ -41,7 +41,7 @@ const GalleryPage = () => {
             </div>
 
             {/* Galéria */}
-            <div className="max-w-6xl mx-auto px-6 py-20">
+            <div className="max-w-6xl mx-auto px-6 pt-20 pb-40">
                 <h2 className="text-3xl font-bold text-blue-700 text-center mb-12">Galéria</h2>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">

@@ -5,7 +5,7 @@ import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 
 const AdatvedelmiPage = () => {
   return (
-    <section className="relative font-sans bg-gradient-to-b from-sky-50 to-white text-gray-800">
+    <section className="relative font-sans bg-sky-50 text-gray-800">
       {/* Banner */}
       <div className="relative w-full h-[38vh] md:h-[45vh] flex items-center justify-center overflow-hidden">
         <Image

@@ -45,7 +45,7 @@ const page = () => {
 
 
   return (
-    <section className=" relative font-sans bg-gradient-to-b from-sky-50 to-white text-gray-800">
+    <section className=" relative font-sans bg-bg text-gray-800">
       {/* Banner */}
       <div className="relative w-full h-[50vh] md:h-[45vh] flex items-center justify-center overflow-hidden">
         <Image
@@ -64,7 +64,7 @@ const page = () => {
             Áraink minden esetben tájékoztató jellegűek – a pontos összeget személyes konzultáció során határozzuk meg.
           </p>
         </div>
-        <div className="poly bg-sky-50" />
+        <div className="poly bg-bg" />
       </div>
 
 

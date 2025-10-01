@@ -3,7 +3,8 @@
 @theme {
   --color-main-blue: #DEEDFA;
   --color-bg: #fefefe;
-  --color-blue:#2b7fff; /* blue-500 */
+  --color-blue: #2b7fff;
+  /* blue-500 */
 }
 
 html,
@@ -29,24 +30,25 @@ section {
 .poly {
   height: 35px;
   width: 56.5%;
-
   background-position: 0% 0%;
-background-repeat: no-repeat;
-background-origin: padding-box;
+  background-repeat: no-repeat;
+  background-origin: padding-box;
   clip-path: polygon(0% 0%, 92% 0%, 100% 100%, 0% 100%);
   position: absolute;
   bottom: 0;
   left: 0;
+  margin-bottom: -2px;
 }
+
 .poly-reverse {
   height: 35px;
   width: 60%;
   background-position: 0% 0%;
-background-repeat: no-repeat;
-background-origin: padding-box;
+  background-repeat: no-repeat;
+  background-origin: padding-box;
   clip-path: polygon(8% 0%, 100% 0%, 100% 100%, 0% 100%);
   position: absolute;
   bottom: 0;
   right: 0;
+  margin-bottom: -2px;
 }
-
