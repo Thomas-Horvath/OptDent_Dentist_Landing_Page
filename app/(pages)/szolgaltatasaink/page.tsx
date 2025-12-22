@@ -4,39 +4,73 @@ import Link from "next/link";
 
 const page = () => {
   return (
-    <section className="font-sans bg-bg">
+    <section className="
+                bg-bg font-sans
+             ">
       {/* Banner */}
-      <div className="relative w-full h-[55vh] md:h-[45vh] flex items-center justify-center overflow-hidden">
+      <div className="
+              flex h-[55vh] items-center justify-center md:h-[45vh]
+              overflow-hidden relative w-full
+           ">
         <Image
           src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/services-banner.jpg`}
           fill
           priority
           alt="Fogászati eszközök, kezelőszék, rendelő"
-          className="absolute inset-0 object-cover object-center opacity-50"
+          className="
+             absolute inset-0 object-center object-cover opacity-50
+          "
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-900/70 via-blue-900/50 to-transparent" />
-        <div className="relative z-10 max-w-5xl w-full px-6 text-center md:text-left">
-          <p className="text-blue-100 uppercase tracking-wider text-sm">Szolgáltatásaink</p>
-          <h1 className="text-2xl sm:text-3xl md:text-5xl font-extrabold text-white leading-tight">
-            Fogászati kezelések az <span className="text-blue-200">Optident</span> rendelőben
+        <div className="
+                absolute bg-gradient-to-r from-blue-900/70 inset-0
+                to-transparent via-blue-900/50
+             " />
+        <div className="
+                max-w-5xl md:text-left px-6 relative text-center w-full
+                z-10
+             ">
+          <p className="
+                text-blue-100 text-sm tracking-wider uppercase
+             ">Szolgáltatásaink</p>
+          <h1 className="
+                 font-extrabold leading-tight md:text-5xl sm:text-3xl
+                 text-2xl text-white
+              ">
+            Fogászati kezelések az <span className="
+                                            text-blue-200
+                                         ">Optident</span> rendelőben
           </h1>
-          <p className="mt-3 text-blue-50 max-w-2xl">
+          <p className="
+                max-w-2xl mt-3 text-blue-50
+             ">
             Modern technológia, empatikus hozzáállás és személyre szabott megoldások minden páciensünk számára.
           </p>
         </div>
-        <div className="poly bg-bg" />
+        <div className="
+                bg-bg poly
+             " />
       </div>
 
       {/* Szolgáltatások */}
-      <div className="relative pb-20">
-        <div className="max-w-6xl mx-auto px-6 py-16 space-y-20">
+      <div className="
+              pb-20 relative
+           ">
+        <div className="
+                max-w-6xl mx-auto px-6 py-16 space-y-20
+             ">
           {/* 1️⃣ Konzerváló fogászat */}
           <div>
-            <h2 className="text-3xl font-bold text-blue-700 mb-6">Konzerváló fogászat</h2>
-            <p className="text-gray-700 leading-relaxed mb-8">
+            <h2 className="
+                   font-bold mb-6 text-3xl text-blue-700
+                ">Konzerváló fogászat</h2>
+            <p className="
+                  leading-relaxed mb-8 text-gray-700
+               ">
               Minimál invazív technikákkal dolgozunk, célunk a saját foganyag megőrzése, miközben a lehető legjobb esztétikai és funkcionális eredményt érjük el.
             </p>
-            <ul className="space-y-4 text-gray-700 list-disc list-inside">
+            <ul className="
+                   list-disc list-inside space-y-4 text-gray-700
+                ">
               <li>Plasztikus tömések modern, kíméletes eljárással</li>
               <li>Betétek (Inlay, Onlay) – CAD/CAM technológiával készített restaurációk</li>
               <li>Héjak – esztétikai korrekció minimális foganyag veszteséggel</li>
@@ -48,11 +82,17 @@ const page = () => {
 
           {/* 2️⃣ Fogpótlások */}
           <div>
-            <h2 className="text-3xl font-bold text-blue-700 mb-6">Fogpótlások</h2>
-            <p className="text-gray-700 leading-relaxed mb-8">
+            <h2 className="
+                   font-bold mb-6 text-3xl text-blue-700
+                ">Fogpótlások</h2>
+            <p className="
+                  leading-relaxed mb-8 text-gray-700
+               ">
               Fémmentes, esztétikus és tartós fogpótlásokat készítünk nagy pontosságú CAD/CAM technológiával.
             </p>
-            <ul className="space-y-4 text-gray-700 list-disc list-inside">
+            <ul className="
+                   list-disc list-inside space-y-4 text-gray-700
+                ">
               <li>Cirkónium-dioxid és préskerámia koronák, hidak</li>
               <li>Adhezív (ragasztott) hidak minimális fogcsiszolással</li>
             </ul>
@@ -60,11 +100,17 @@ const page = () => {
 
           {/* 3️⃣ Szájsebészet */}
           <div>
-            <h2 className="text-3xl font-bold text-blue-700 mb-6">Szájsebészet</h2>
-            <p className="text-gray-700 leading-relaxed mb-8">
+            <h2 className="
+                   font-bold mb-6 text-3xl text-blue-700
+                ">Szájsebészet</h2>
+            <p className="
+                  leading-relaxed mb-8 text-gray-700
+               ">
               Sebészeti beavatkozásaink célja a fogak megmentése és a hosszú távú stabilitás biztosítása.
             </p>
-            <ul className="space-y-4 text-gray-700 list-disc list-inside">
+            <ul className="
+                   list-disc list-inside space-y-4 text-gray-700
+                ">
               <li>Rezekció – a gyökércsúcs eltávolítása és a gyulladt terület tisztítása</li>
               <li>Retrográd gyökértömés – a gyökércsatorna lezárása a csont felől</li>
               <li>Implantáció – hiányzó fogak pótlása modern műgyökérrel</li>
@@ -74,11 +120,17 @@ const page = () => {
 
           {/* 4️⃣ Fogfehérítés */}
           <div>
-            <h2 className="text-3xl font-bold text-blue-700 mb-6">Fogfehérítés</h2>
-            <p className="text-gray-700 leading-relaxed mb-8">
+            <h2 className="
+                   font-bold mb-6 text-3xl text-blue-700
+                ">Fogfehérítés</h2>
+            <p className="
+                  leading-relaxed mb-8 text-gray-700
+               ">
               Hatékony, biztonságos és személyre szabott fogfehérítési eljárások az Ön igényeire szabva.
             </p>
-            <ul className="space-y-4 text-gray-700 list-disc list-inside">
+            <ul className="
+                   list-disc list-inside space-y-4 text-gray-700
+                ">
               <li>Rendelői fogfehérítés LED technológiával</li>
               <li>Otthoni fogfehérítő sín készítése és anyag biztosítása</li>
               <li>Belső fogfehérítés elszíneződött gyökérkezelt fogaknál</li>
@@ -87,19 +139,29 @@ const page = () => {
 
           {/* 5️⃣ Fogékszer */}
           <div>
-            <h2 className="text-3xl font-bold text-blue-700 mb-6">Fogékszer</h2>
-            <p className="text-gray-700 leading-relaxed">
+            <h2 className="
+                   font-bold mb-6 text-3xl text-blue-700
+                ">Fogékszer</h2>
+            <p className="
+                  leading-relaxed text-gray-700
+               ">
               Kiváló minőségű, csiszolás nélkül felhelyezhető fogékszereket kínálunk, amelyek bármikor eltávolíthatók nyom nélkül.
             </p>
           </div>
 
           {/* 6️⃣ Parodontológia */}
           <div>
-            <h2 className="text-3xl font-bold text-blue-700 mb-6">Parodontológia</h2>
-            <p className="text-gray-700 leading-relaxed mb-8">
+            <h2 className="
+                   font-bold mb-6 text-3xl text-blue-700
+                ">Parodontológia</h2>
+            <p className="
+                  leading-relaxed mb-8 text-gray-700
+               ">
               Az egészséges fogíny az alapja minden kezelésnek. Komplex kezeléseinkkel helyreállítjuk a fogágy természetes állapotát.
             </p>
-            <ul className="space-y-4 text-gray-700 list-disc list-inside">
+            <ul className="
+                   list-disc list-inside space-y-4 text-gray-700
+                ">
               <li>Íny feletti és alatti fogkő eltávolítás</li>
               <li>Íny alatti tisztítás feltárásból</li>
               <li>GTR – irányított szövetregeneráció csontpótló anyagokkal</li>
@@ -108,31 +170,50 @@ const page = () => {
 
           {/* 7️⃣ Röntgen diagnosztika */}
           <div>
-            <h2 className="text-3xl font-bold text-blue-700 mb-6">Röntgen diagnosztika</h2>
-            <p className="text-gray-700 leading-relaxed mb-8">
+            <h2 className="
+                   font-bold mb-6 text-3xl text-blue-700
+                ">Röntgen diagnosztika</h2>
+            <p className="
+                  leading-relaxed mb-8 text-gray-700
+               ">
               Korszerű digitális és hagyományos röntgenmegoldásainkkal pontos diagnózist és biztonságos kezelési tervet készítünk.
             </p>
-            <ul className="space-y-4 text-gray-700 list-disc list-inside">
+            <ul className="
+                   list-disc list-inside space-y-4 text-gray-700
+                ">
               <li>Periapikális röntgen – egyes fogak részletes vizsgálatához</li>
               <li>Panoráma röntgen – teljes fogsor és állcsont áttekintése</li>
               <li>CT – implantációk és műtéti tervek előkészítéséhez</li>
             </ul>
           </div>
         </div>
-        <div className="poly-reverse bg-sky-50" />
+        <div className="
+                bg-sky-50 poly-reverse
+             " />
       </div>
       {/* CTA */}
-      <div className="relative bg-sky-50 pt-16 pb-30 text-center text-white">
-        <h3 className="text-2xl font-bold text-blue-700">Kérdése van vagy időpontot szeretne foglalni?</h3>
-        <p className="mt-2 text-gray-600">Vegye fel velünk a kapcsolatot, és segítünk megtalálni az Ön számára legjobb megoldást.</p>
+      <div className="
+              bg-sky-50 pb-30 pt-16 relative text-center text-white
+           ">
+        <h3 className="
+               font-bold text-2xl text-blue-700
+            ">Kérdése van vagy időpontot szeretne foglalni?</h3>
+        <p className="
+              mt-2 text-gray-600
+           ">Vegye fel velünk a kapcsolatot, és segítünk megtalálni az Ön számára legjobb megoldást.</p>
         <Link
           href="/kapcsolat"
-          className="inline-block mt-6 bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-8 rounded-lg shadow-md transition"
+          className="
+             bg-blue-500 font-semibold hover:bg-blue-600 inline-block
+             mt-6 px-8 py-3 rounded-lg shadow-md text-white transition
+          "
 
         >
           Kapcsolatfelvétel →
         </Link>
-        <div className="poly bg-blue-500" />
+        <div className="
+                bg-blue-500 poly
+             " />
       </div>
     </section>
   );

@@ -17,7 +17,7 @@ export default function Home() {
       <div className="relative w-full pb-20 lg:pb-0 lg:h-[70vh] flex items-center justify-center overflow-hidden">
         {/* Háttérkép */}
         <Image
-          src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/banner.jpg`}
+          src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/banner.webp`}
           className="absolute inset-0 object-cover object-center  opacity-50 "
           fill
           priority
@@ -123,7 +123,7 @@ export default function Home() {
           >
             <div className="overflow-hidden rounded-t-2xl">
               <Image
-                src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/dr-opt.jpg`}
+                src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/dr-opt.webp`}
                 alt="Dr. Opt Tamás"
                 className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-500"
                 width={500}
@@ -150,7 +150,7 @@ export default function Home() {
           <div className="bg-white rounded-2xl shadow-md hover:shadow-xl transition transform hover:-translate-y-1">
             <div className="overflow-hidden rounded-t-2xl">
               <Image
-                src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/assistant.jpg`}
+                src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/assistant.webp`}
                 alt="Kiss Anna"
                 className="w-full h-80 object-cover hover:scale-105 transition-transform duration-500"
                 width={500}
